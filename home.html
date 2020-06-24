@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="ja" class="h-100">
+<head>
+<meta charset="utf-8">
+<title>Ans Share</title>
+<meta name="description" content="社内SNSサンプル">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="styles/shards-dashboards.1.1.0.css">
+<link rel="stylesheet" href="styles/extras.1.1.0.min.css">
+</head>
+<body class="h-100">
+	<div class="container-fluid">
+		<div class="row">
+			<!-- Main Sidebar -->
+			<aside class="main-sidebar col-12 col-md-3 col-lg-2 px-0">
+				<div class="main-navbar">
+					<nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
+						<a class="navbar-brand w-100 mr-0" href="home.html" style="line-height: 25px;">
+							<div class="d-table m-auto">
+								<span id="main-logo" class="d-inline-block align-top mr-1 text-primary material-icons">question_answer</span> <span class="d-none d-md-inline ml-1">Ans Share</span>
+							</div>
+						</a>
+						<a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
+							<i class="material-icons">&#xE5C4;</i>
+						</a>
+					</nav>
+				</div>
+				<div class="nav-wrapper">
+					<ul class="nav flex-column">
+						<li class="nav-item"><a class="nav-link active" href="home.html">
+								<i class="material-icons">home</i> <span>ホーム</span>
+							</a></li>
+						<li class="nav-item"><a class="nav-link " href="analytics.html">
+								<i class="material-icons">insert_chart_outlined</i> <span>アナリティクス</span>
+							</a></li>
+						<li class="nav-item"><a class="nav-link " href="members.html">
+								<i class="material-icons">people</i> <span>メンバー</span>
+							</a></li>
+						<li class="nav-item"><a class="nav-link " href="shares.html">
+								<i class="material-icons">description</i> <span>シェア</span>
+							</a></li>
+						<li class="nav-item"><a class="nav-link " href="event.html">
+								<i class="material-icons">sports_tennis</i> <span>イベント &amp; サークル</span>
+							</a></li>
+					</ul>
+				</div>
+			</aside>
+			<!-- End Main Sidebar -->
+			<main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
+				<div class="main-navbar sticky-top bg-white">
+					<!-- Main Navbar -->
+					<nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
+						<form action="#" class="main-navbar__search w-100 d-none d-md-flex d-lg-flex">
+							<div class="input-group input-group-seamless ml-3">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fas fa-search"></i>
+									</div>
+								</div>
+								<input class="navbar-search form-control" type="text" placeholder="キーワード検索" aria-label="Search">
+							</div>
+						</form>
+						<ul class="navbar-nav border-left flex-row ">
+							<li class="nav-item border-right dropdown notifications"><a class="nav-link nav-link-icon text-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<div class="nav-link-icon__wrapper">
+										<i class="material-icons">&#xE7F4;</i> <span class="badge badge-pill badge-danger">2</span>
+									</div>
+								</a>
+								<div class="dropdown-menu dropdown-menu-small" aria-labelledby="dropdownMenuLink">
+									<a class="dropdown-item" href="#">
+										<div class="notification__icon-wrapper">
+											<div class="notification__icon">
+												<i class="material-icons">home</i>
+											</div>
+										</div>
+										<div class="notification__content">
+											<span class="notification__category">HOME</span>
+											<p>新しいつぶやきが2件あります。</p>
+										</div>
+									</a>
+									<a class="dropdown-item" href="#">
+										<div class="notification__icon-wrapper">
+											<div class="notification__icon">
+												<i class="material-icons">description</i>
+											</div>
+										</div>
+										<div class="notification__content">
+											<span class="notification__category">SHARE</span>
+											<p>新しいシェアが1件あります。</p>
+										</div>
+									</a>
+									<a class="dropdown-item notification__all text-center" href="#"> すべてのお知らせを表示 </a>
+								</div></li>
+							<li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+									<img class="user-avatar rounded-circle mr-2" src="images/avatars/0.jpg" alt="User Avatar"> <span class="d-none d-md-inline-block">西園寺 愛音</span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-small">
+									<a class="dropdown-item" href="user-profile.html">
+										<i class="material-icons">person</i> プロフィール
+									</a>
+									<a class="dropdown-item" href="new-share.html">
+										<i class="material-icons">note_add</i> シェアする
+									</a>
+									<a class="dropdown-item" href="#">
+										<i class="material-icons">settings</i> 設定
+									</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item text-danger" href="index.html">
+										<i class="material-icons text-danger">&#xE879;</i> ログアウト
+									</a>
+								</div></li>
+						</ul>
+						<nav class="nav">
+							<a href="#" class="nav-link nav-link-icon toggle-sidebar d-md-inline d-lg-none text-center border-left" data-toggle="collapse" data-target=".header-navbar" aria-expanded="false" aria-controls="header-navbar">
+								<i class="material-icons">&#xE5D2;</i>
+							</a>
+						</nav>
+					</nav>
+				</div>
+				<!-- / .main-navbar -->
+				<div class="main-content-container container-fluid px-5">
+					<!-- Page Header -->
+					<div class="page-header row no-gutters py-4">
+						<div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+							<span class="text-uppercase page-subtitle">home</span>
+							<h3 class="page-title">ホーム</h3>
+						</div>
+					</div>
+					<!-- End Page Header -->
+					<div class="row">
+						<div class="col-lg-5 col-md-12 col-sm-12 mb-4">
+							<!-- Notification -->
+							<div class="card card-small blog-comments">
+								<div class="card-header border-bottom">
+									<h6 class="m-0">お知らせ</h6>
+								</div>
+								<div class="card-body p-0">
+									<div class="blog-comments__item d-flex p-3">
+										<div class="blog-comments__avatar mr-3">
+											<img src="images/avatars/6.jpg" alt="User avatar" />
+										</div>
+										<div class="blog-comments__content">
+											<div class="blog-comments__meta text-muted">
+												<a class="text-secondary" href="#">社長</a>
+												<span class="text-muted">– 2020/06/05</span>
+											</div>
+											<p class="m-0 my-1 mb-2 text-muted">特別一時金コロナ手当、一律２万円を支給したいと思います。プラス思考、ポジティブシンキング！</p>
+											<div class="blog-comments__actions">
+												<div class="btn-group btn-group-sm">
+													<button type="button" class="btn btn-white">
+														<span class="text-primary"> <i class="material-icons">thumb_up_alt</i> 100
+														</span>
+													</button>
+													<button type="button" class="btn btn-white">
+														<span class="text-danger"> <i class="material-icons">chat_bubble_outline</i> 14
+														</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="blog-comments__item d-flex p-3">
+										<div class="blog-comments__avatar mr-3">
+											<img src="images/avatars/7.jpg" alt="User avatar" />
+										</div>
+										<div class="blog-comments__content">
+											<div class="blog-comments__meta text-muted">
+												<a class="text-secondary" href="#">総務部</a>
+												<span class="text-muted">– 2020/06/01</span>
+											</div>
+											<p class="m-0 my-1 mb-2 text-muted">
+												6月より、
+												<a href="#">仁田 勇治</a>
+												さん、
+												<a href="#">池間 千穂子</a>
+												さんの2名が入社されました。
+											</p>
+											<div class="blog-comments__actions">
+												<div class="btn-group btn-group-sm">
+													<button type="button" class="btn btn-white">
+														<span class="text-primary"> <i class="material-icons">thumb_up_alt</i> 47
+														</span>
+													</button>
+													<button type="button" class="btn btn-white">
+														<span class="text-danger"> <i class="material-icons">chat_bubble_outline</i>
+														</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="blog-comments__item d-flex p-3">
+										<div class="blog-comments__avatar mr-3">
+											<img src="images/avatars/7.jpg" alt="User avatar" />
+										</div>
+										<div class="blog-comments__content">
+											<div class="blog-comments__meta text-muted">
+												<a class="text-secondary" href="#">総務部</a>
+												<span class="text-muted">– 2020/06/01</span>
+											</div>
+											<p class="m-0 my-1 mb-2 text-muted">
+												<a href="#">野久保 謙次</a>
+												さん、
+												<a href="#">古手川 照幸</a>
+												さんが基本情報処理技術者試験に合格されました。おめでとうございます！
+											</p>
+											<div class="blog-comments__actions">
+												<div class="btn-group btn-group-sm">
+													<button type="button" class="btn btn-white">
+														<span class="text-primary"> <i class="material-icons">thumb_up_alt</i> 25
+														</span>
+													</button>
+													<button type="button" class="btn btn-white">
+														<span class="text-danger"> <i class="material-icons">chat_bubble_outline</i>
+														</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="blog-comments__item d-flex p-3">
+										<div class="blog-comments__avatar mr-3">
+											<img src="images/avatars/7.jpg" alt="User avatar" />
+										</div>
+										<div class="blog-comments__content">
+											<div class="blog-comments__meta text-muted">
+												<a class="text-secondary" href="#">総務部</a>
+												<span class="text-muted">– 2020/05/25</span>
+											</div>
+											<p class="m-0 my-1 mb-2 text-muted">
+												5月20日
+												<a href="#">大道寺 智晶</a>
+												さんがご結婚されました。おめでとうございます！
+											</p>
+											<div class="blog-comments__actions">
+												<div class="btn-group btn-group-sm">
+													<button type="button" class="btn btn-white">
+														<span class="text-primary"> <i class="material-icons">thumb_up_alt</i> 62
+														</span>
+													</button>
+													<button type="button" class="btn btn-white">
+														<span class="text-danger"> <i class="material-icons">chat_bubble_outline</i>
+														</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End Notification -->
+							<div class="card card-small blog-comments mt-4">
+								<div class="card-header border-bottom">
+									<h6 class="m-0">今月のコラム</h6>
+								</div>
+								<div class="card-body p-0">
+									<div class="blog-comments__item d-flex p-3">
+										<div class="blog-comments__avatar mr-3">
+											<img src="images/avatars/5.jpg" alt="User avatar" />
+										</div>
+										<div class="blog-comments__content">
+											<div class="blog-comments__meta text-muted">
+												<a class="text-secondary" href="#">中間 亮平</a>
+											</div>
+											<div class="m-0 my-1 mb-2">
+												<a href="#">お疲れ様です。中間です。皆さん最近はいかがお過ごしでしょうか...</a>
+											</div>
+											<div class="blog-comments__actions">
+												<div class="btn-group btn-group-sm">
+													<button type="button" class="btn btn-white">
+														<span class="text-primary"> <i class="material-icons">thumb_up_alt</i> 39
+														</span>
+													</button>
+													<button type="button" class="btn btn-white">
+														<span class="text-danger"> <i class="material-icons">chat_bubble_outline</i>
+														</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Tweet -->
+						<div class="col-lg-7 col-md-12 col-sm-12 mb-4">
+							<div class="card card-small blog-comments">
+								<div class="card-header border-bottom">
+									<h6 class="m-0">つぶやき</h6>
+								</div>
+								<div class="card-body border-bottom">
+									<form class="">
+										<div class="form-group d-flex mb-2">
+											<div class="blog-comments__avatar mr-3">
+												<img src="images/avatars/0.jpg" alt="User avatar" />
+											</div>
+											<textarea class="form-control" placeholder="いまどうしてる？"></textarea>
+										</div>
+										<div class="form-group mb-0 text-right align-middle">
+											<button type="button" class="btn btn-link p-1">
+												<span class="material-icons text-primary"> photo </span>
+											</button>
+											<button type="button" class="btn btn-link p-1 mr-2">
+												<span class="material-icons text-primary"> tag_faces </span>
+											</button>
+											<button type="submit" class="btn btn-accent">つぶやく</button>
+										</div>
+									</form>
+								</div>
+								<div class="card-body p-0">
+									<div class="blog-comments__item d-flex p-3">
+										<div class="blog-comments__avatar mr-3">
+											<img src="images/avatars/1.jpg" alt="User avatar" />
+										</div>
+										<div class="blog-comments__content">
+											<div class="blog-comments__meta text-muted">
+												<a class="text-secondary" href="#">深川 誠</a>
+												<span class="text-muted">– 5分</span>
+											</div>
+											<p class="m-0 my-1 mb-2 text-muted">Well, the way they make shows is, they make one show ...</p>
+											<div class="blog-comments__actions">
+												<div class="btn-group btn-group-sm">
+													<button type="button" class="btn btn-white">
+														<span class="text-primary"> <i class="material-icons">thumb_up_alt</i> 2
+														</span>
+													</button>
+													<button type="button" class="btn btn-white">
+														<span class="text-danger"> <i class="material-icons">chat_bubble_outline</i>
+														</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="blog-comments__item d-flex p-3">
+										<div class="blog-comments__avatar mr-3">
+											<img src="images/avatars/2.jpg" alt="User avatar" />
+										</div>
+										<div class="blog-comments__content">
+											<div class="blog-comments__meta text-muted">
+												<a class="text-secondary" href="#">神野 和幸</a>
+												<span class="text-muted">– 28分</span>
+											</div>
+											<p class="m-0 my-1 mb-2 text-muted">After the avalanche, it took us a week to climb out. Now...</p>
+											<div class="blog-comments__actions">
+												<div class="btn-group btn-group-sm">
+													<button type="button" class="btn btn-white">
+														<span class="text-primary"> <i class="material-icons">thumb_up_alt</i> 6
+														</span>
+													</button>
+													<button type="button" class="btn btn-white">
+														<span class="text-danger"> <i class="material-icons">chat_bubble_outline</i>
+														</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="blog-comments__item d-flex p-3">
+										<div class="blog-comments__avatar mr-3">
+											<img src="images/avatars/3.jpg" alt="User avatar" />
+										</div>
+										<div class="blog-comments__content">
+											<div class="blog-comments__meta text-muted">
+												<a class="text-secondary" href="#">米原 慶太</a>
+												<span class="text-muted">– 43分</span>
+											</div>
+											<p class="m-0 my-1 mb-2 text-muted">My money's in that office, right? If she start giving me...</p>
+											<div class="blog-comments__actions">
+												<div class="btn-group btn-group-sm">
+													<button type="button" class="btn btn-white">
+														<span class="text-primary"> <i class="material-icons">thumb_up_alt</i> 10
+														</span>
+													</button>
+													<button type="button" class="btn btn-white">
+														<span class="text-danger"> <i class="material-icons">chat_bubble_outline</i> 2
+														</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="blog-comments__item d-flex p-3">
+										<div class="blog-comments__avatar mr-3">
+											<img src="images/avatars/4.jpg" alt="User avatar" />
+										</div>
+										<div class="blog-comments__content">
+											<div class="blog-comments__meta text-muted">
+												<a class="text-secondary" href="#">西本 愛里</a>
+												<span class="text-muted">– 1時間</span>
+											</div>
+											<p class="m-0 my-1 mb-2 text-muted">My money's in that office, right? If she start giving me...</p>
+											<div class="blog-comments__actions">
+												<div class="btn-group btn-group-sm">
+													<button type="button" class="btn btn-white">
+														<span class="text-primary"> <i class="material-icons">thumb_up_alt</i> 13
+														</span>
+													</button>
+													<button type="button" class="btn btn-white">
+														<span class="text-danger"> <i class="material-icons">chat_bubble_outline</i> 2
+														</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="blog-comments__item d-flex p-3">
+										<div class="blog-comments__avatar mr-3">
+											<img src="images/avatars/5.jpg" alt="User avatar" />
+										</div>
+										<div class="blog-comments__content">
+											<div class="blog-comments__meta text-muted">
+												<a class="text-secondary" href="#">中間 亮平</a>
+												<span class="text-muted">– 2時間</span>
+											</div>
+											<p class="m-0 my-1 mb-2 text-muted">My money's in that office, right? If she start giving me...</p>
+											<div class="blog-comments__actions">
+												<div class="btn-group btn-group-sm">
+													<button type="button" class="btn btn-white">
+														<span class="text-primary"> <i class="material-icons">thumb_up_alt</i> 20
+														</span>
+													</button>
+													<button type="button" class="btn btn-white">
+														<span class="text-danger"> <i class="material-icons">chat_bubble_outline</i>
+														</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-footer border-top">
+									<div class="row">
+										<div class="col text-center view-report">
+											<button type="submit" class="btn btn-white">すべて表示</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Tweet -->
+					</div>
+				</div>
+				<footer class="main-footer d-flex p-2 px-3 bg-white border-top">
+					<span class="copyright ml-auto my-auto mr-2">Copyright © 2020 <a href="#" rel="nofollow">Answer</a>
+					</span>
+				</footer>
+			</main>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+	<script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
+	<script src="scripts/extras.1.1.0.min.js"></script>
+	<script src="scripts/shards-dashboards.1.1.0.min.js"></script>
+</body>
+</html>
